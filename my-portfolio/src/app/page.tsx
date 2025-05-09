@@ -9,12 +9,14 @@ export default function Home() {
     fetch(`/api/track?path=${encodeURIComponent(window.location.pathname)}`);
   }, []);
 
+  const currentYear = new Date().getFullYear();
+
   return (
     <main className="font-sans">
       {/* Hero Section */}
       <section className="flex flex-col-reverse sm:flex-row items-center justify-between min-h-[90vh] px-6 py-20 bg-gradient-to-br from-white to-gray-100">
         <div className="sm:w-1/2 text-center sm:text-left">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-4">Hi, I’m Preston Petersen</h1>
+          <h1 className="text-4xl sm:text-5xl font-bold mb-4">Hi, I&apos;m Preston Petersen</h1>
           <h2 className="text-2xl text-gray-600 mb-6">Entry-Level Software Engineer</h2>
           <p className="text-gray-700 mb-6">Building thoughtful, scalable software solutions.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start">
@@ -32,7 +34,7 @@ export default function Home() {
       <section className="bg-gray-100 py-20 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">About Me</h2>
-          <p className="text-gray-700 mb-4">I’m a recent Computer Science graduate passionate about backend development and building scalable systems. My work blends thoughtful design with technical depth, shaped by experience in consulting and real-world projects.</p>
+          <p className="text-gray-700 mb-4">I&apos;m a recent Computer Science graduate passionate about backend development and building scalable systems. My work blends thoughtful design with technical depth, shaped by experience in consulting and real-world projects.</p>
           <p className="text-gray-700 mb-4">My goal is to contribute to impactful engineering teams where I can grow as a developer and solve meaningful problems.</p>
           <p className="text-gray-700">Outside of work, I enjoy hiking, learning about financial markets, and optimizing everyday systems.</p>
         </div>
@@ -102,7 +104,7 @@ export default function Home() {
             <div className="bg-white rounded-xl shadow p-4 hover:shadow-lg transition">
               <Image src="/images/wellspring.png" alt="Wellspring" width={600} height={300} className="rounded mb-4" />
               <h3 className="text-xl font-semibold">Wellspring Order Optimizer</h3>
-              <p className="text-gray-600 mb-4">Redesigned nonprofit's ordering workflow. Cut lead time and improved UX.</p>
+              <p className="text-gray-600 mb-4">Redesigned nonprofit&apos;s ordering workflow. Cut lead time and improved UX.</p>
               <div className="flex gap-3 text-sm">
                 <Link href="#" className="text-blue-600 underline">Case Study</Link>
               </div>
@@ -114,7 +116,7 @@ export default function Home() {
       {/* Contact Section */}
       <section id="contact" className="py-20 px-6 text-center">
         <h2 className="text-3xl font-bold mb-6">Get In Touch</h2>
-        <p className="mb-6 text-gray-700">Let’s build something great together!</p>
+        <p className="mb-6 text-gray-700">Let&apos;s build something great together!</p>
         <div className="flex justify-center gap-6 text-xl">
           <Link href="mailto:youremail@example.com" className="hover:underline">Email</Link>
           <Link href="https://linkedin.com/in/yourprofile" className="hover:underline" target="_blank">LinkedIn</Link>
@@ -125,7 +127,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-black text-white py-6 text-center">
         <div className="flex flex-col gap-2">
-          <p>© {new Date().getFullYear()} Preston Petersen</p>
+          <p>© {currentYear} Preston Petersen</p>
           <div className="flex justify-center gap-4 text-sm">
             <Link href="#">Home</Link>
             <Link href="#projects">Projects</Link>
