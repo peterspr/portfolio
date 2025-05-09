@@ -20,7 +20,7 @@ export default function Home() {
         <section id="hero" className="relative min-h-[75vh] flex flex-col-reverse sm:flex-row items-center justify-between px-6 py-20"
           style={{backgroundImage: "url('/wavy-lines-light.svg')", backgroundRepeat: 'repeat', backgroundSize: 'auto', backgroundColor: 'black',}}>
           <div className="sm:w-1/2 text-center sm:text-left sm:px-12 bg-white/70 p-6 rounded-md shadow-md">
-            <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-black">Hi, I'm Preston Petersen</h1>
+            <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-black">Hi, I&apos;m Preston Petersen</h1>
             <h2 className="text-2xl text-gray-800 mb-6">Entry-Level Software Engineer</h2>
             <p className="text-gray-900 mb-6">Building thoughtful, scalable software solutions.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start items-center">
@@ -48,7 +48,7 @@ export default function Home() {
         <section id="about" className="bg-white py-20 px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6 text-sky-600">About Me</h2>
-            <p className="text-gray-900 mb-4">I'm a recent Computer Science graduate passionate about backend development and building scalable systems. My work blends thoughtful design with technical depth, shaped by experience in consulting and real-world projects.</p>
+            <p className="text-gray-900 mb-4">I&apos;m a recent Computer Science graduate passionate about backend development and building scalable systems. My work blends thoughtful design with technical depth, shaped by experience in consulting and real-world projects.</p>
             <p className="text-gray-900 mb-4">My goal is to contribute to impactful engineering teams where I can grow as a developer and solve meaningful problems.</p>
             <p className="text-gray-900">Outside of work, I enjoy hiking, learning about financial markets, and optimizing everyday systems.</p>
           </div>
@@ -123,7 +123,7 @@ export default function Home() {
               <div className="bg-white rounded-xl shadow p-4 hover:shadow-xl hover:scale-[1.02] transition-transform duration-300">
                 <Image src="/public/temp-image.png" alt="Wellspring" width={600} height={300} className="rounded mb-4" />
                 <h3 className="text-xl font-semibold text-black">Wellspring Order Optimizer</h3>
-                <p className="text-gray-900 mb-4">Redesigned nonprofit's ordering workflow. Cut lead time and improved UX.</p>
+                <p className="text-gray-900 mb-4">Redesigned nonprofit&apos;s ordering workflow. Cut lead time and improved UX.</p>
                 <div className="flex gap-3 text-sm">
                   <Link href="#" className="text-blue-600 underline">Case Study</Link>
                 </div>

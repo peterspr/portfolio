@@ -1,7 +1,5 @@
 'use client';
 
-import Link from 'next/link';
-
 export default function NavBar() {
   return (
     <nav className="fixed top-0 w-full bg-white/70 backdrop-blur-md z-50 shadow-md">
