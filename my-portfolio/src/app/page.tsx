@@ -24,9 +24,9 @@ export default function Home() {
             <h2 className="text-2xl text-gray-800 mb-6">Entry-Level Software Engineer</h2>
             <p className="text-gray-900 mb-6">Building thoughtful, scalable software solutions.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start items-center">
-              <Link href="/resume.pdf" target="_blank" className="border border-black px-5 py-2 rounded-full text-black hover:bg-black hover:text-white transition">
+              <a href="/Preston_Petersen_Resume.pdf" download className="border border-black px-5 py-2 rounded-full text-black hover:bg-black hover:text-white transition">
                 Download Resume
-              </Link>
+              </a>
               <div className="flex gap-4 mt-2 sm:mt-0">
                 <Link href="mailto:prestonwpetersen@outlook.com">
                   <Image src="/outlook.svg" alt="Email" width={28} height={28} />
@@ -102,30 +102,36 @@ export default function Home() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Project 1 */}
               <div className="bg-white rounded-xl shadow p-4 hover:shadow-xl hover:scale-[1.02] transition-transform duration-300">
-                <Image src="/public/temp-image.png" alt="Earnings Call Project" width={600} height={300} className="rounded mb-4" />
-                <h3 className="text-xl font-semibold text-black">Earnings Call NLP Classifier</h3>
-                <p className="text-gray-900 mb-4">Fine-tuned BERT model to classify earnings call sections. Led model training and optimization.</p>
+                <div className="flex items-center h-50">
+                  <Image src="/SCAProject_Thumbnail.png" alt="SCA Toolkit" width={600} height={300} className="rounded mb-4" />
+                </div>
+                <h3 className="text-xl font-semibold text-black">Side Channel Analysis Toolkit</h3>
+                <p className="text-gray-900 mb-4">Developed a toolkit to analyze EM radiation from side-channel attacks, focusing on cryptographic leakage patterns. 
+                Built custom Python tools for trace generation, signal filtering, and attack modeling.</p>
                 <div className="flex gap-3 text-sm">
-                  <Link href="#" className="text-blue-600 underline">GitHub Repo</Link>
+                  <Link href="https://github.com/peterspr/sca-toolkit" className="text-blue-600 underline">GitHub Repo</Link>
+                  <a href="/SCA_Presentaion.pptx" download className="text-blue-600 underline">Download Presentation</a>
                 </div>
               </div>
               {/* Project 2 */}
               <div className="bg-white rounded-xl shadow p-4 hover:shadow-xl hover:scale-[1.02] transition-transform duration-300">
-                <Image src="/public/temp-image.png" alt="QuizWiz" width={600} height={300} className="rounded mb-4" />
+                <div className="flex items-center h-50">
+                  <Image src="/QuizWiz_Thumbnail.png" alt="QuizWiz" width={600} height={300} className="rounded mb-4" />
+                </div>
                 <h3 className="text-xl font-semibold text-black">QuizWiz Web App</h3>
                 <p className="text-gray-900 mb-4">A full-stack trivia game using React and Node.js. Built REST API and UI components.</p>
                 <div className="flex gap-3 text-sm">
-                  <Link href="#" className="text-blue-600 underline">Live Demo</Link>
-                  <Link href="#" className="text-blue-600 underline">GitHub Repo</Link>
+                  <Link href="https://github.com/peterspr/QuizWiz" className="text-blue-600 underline">GitHub Repo</Link>
                 </div>
               </div>
               {/* Project 3 */}
               <div className="bg-white rounded-xl shadow p-4 hover:shadow-xl hover:scale-[1.02] transition-transform duration-300">
-                <Image src="/public/temp-image.png" alt="Wellspring" width={600} height={300} className="rounded mb-4" />
+                <div className="flex items-center h-50">
+                  <Image src="/WellSpring_Thumbnail.png" alt="Wellspring" width={600} height={300} className="rounded mb-4" />
+                </div>
                 <h3 className="text-xl font-semibold text-black">Wellspring Order Optimizer</h3>
                 <p className="text-gray-900 mb-4">Redesigned nonprofit&apos;s ordering workflow. Cut lead time and improved UX.</p>
                 <div className="flex gap-3 text-sm">
-                  <Link href="#" className="text-blue-600 underline">Case Study</Link>
                 </div>
               </div>
             </div>
@@ -139,7 +145,6 @@ export default function Home() {
             <div className="flex justify-center gap-4 text-sm">
               <Link href="#">Home</Link>
               <Link href="#projects">Projects</Link>
-              <Link href="/resume.pdf">Resume</Link>
               <Link href="#contact">Contact</Link>
             </div>
           </div>

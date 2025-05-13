@@ -10,7 +10,6 @@ export default function NavBar() {
           <a href="#about" className="font-bold text-black hover:text-sky-600">About</a>
           <a href="#skills" className="font-bold text-black hover:text-sky-600">Skills</a>
           <a href="#projects" className="font-bold text-black hover:text-sky-600">Projects</a>
-          <a href="/resume.pdf" className="font-bold text-black hover:text-sky-600" target="_blank" rel="noopener noreferrer">Resume</a>
         </div>
       </div>
     </nav>
