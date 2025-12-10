@@ -16,8 +16,6 @@ export default function Home() {
     fetch(`/api/track?path=${encodeURIComponent(window.location.pathname)}`);
   }, []);
 
-  const currentYear = new Date().getFullYear();
-
   return (
     <>
       <NavBar />
