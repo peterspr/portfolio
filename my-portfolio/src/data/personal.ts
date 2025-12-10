@@ -29,44 +29,5 @@ export const personalInfo: PersonalInfo = {
       'Outside of work, I enjoy hiking the Pacific Northwest, golfing, and learning about financial markets and investment strategies.'
     ]
   },
-  interests: ['Hiking', 'Golf', 'Financial Markets', 'Technology Innovation', 'Outdoor Photography']
+  interests: ['Hiking', 'Golf', 'Financial Markets', 'Technology Innovation', 'Snowboarding']
 };
-
-export interface Testimonial {
-  id: string;
-  name: string;
-  role: string;
-  company: string;
-  content: string;
-  avatar?: string;
-  featured: boolean;
-}
-
-export const testimonials: Testimonial[] = [
-  {
-    id: 'wellspring-manager',
-    name: 'Sarah Johnson',
-    role: 'Operations Manager',
-    company: 'WellSpring Family Store',
-    content: 'Preston transformed our entire ordering system. What used to take months now happens in a week. His understanding of our nonprofit constraints and ability to design practical solutions was exceptional.',
-    featured: true
-  },
-  {
-    id: 'peak-director',
-    name: 'Michael Chen',
-    role: 'Analytics Director',
-    company: 'Peak Consulting & Analytics',
-    content: 'Preston\'s automation tools saved our team countless hours of manual work. His Python skills and attention to detail in financial analysis made him an invaluable contributor to our forensic investigations.',
-    featured: true
-  },
-  {
-    id: 'recon-supervisor',
-    name: 'Lisa Rodriguez',
-    role: 'Engineering Supervisor',
-    company: 'Recon Dynamics',
-    content: 'During his internship, Preston demonstrated remarkable ability to tackle complex problems. His work on driver behavior analysis showed both technical skill and practical understanding of real-world applications.',
-    featured: false
-  }
-];
-
-export const featuredTestimonials = testimonials.filter(testimonial => testimonial.featured);

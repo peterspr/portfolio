@@ -7,7 +7,6 @@ import { AboutSection } from '@/components/sections/about';
 import { SkillsSection } from '@/components/sections/skills';
 import { ProjectsSection } from '@/components/sections/projects';
 import { ExperienceSection } from '@/components/sections/experience';
-import { TestimonialsSection } from '@/components/sections/testimonials';
 import { ContactSection } from '@/components/sections/contact';
 import Link from 'next/link';
 import { personalInfo } from '@/data/personal';
@@ -28,7 +27,6 @@ export default function Home() {
         <SkillsSection />
         <ProjectsSection />
         <ExperienceSection />
-        <TestimonialsSection />
         <ContactSection />
 
         {/* Footer */}
@@ -42,9 +40,6 @@ export default function Home() {
                 </h3>
                 <p className="text-muted-foreground mb-4 max-w-md">
                   {personalInfo.bio.short}
-                </p>
-                <p className="text-sm text-muted-foreground">
-                  © {currentYear} {personalInfo.name}. All rights reserved.
                 </p>
               </div>
 
@@ -105,12 +100,6 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-            </div>
-
-            <div className="border-t border-border mt-8 pt-8 text-center">
-              <p className="text-sm text-muted-foreground">
-                Built with Next.js, TypeScript, Tailwind CSS, and Framer Motion
-              </p>
             </div>
           </div>
         </footer>

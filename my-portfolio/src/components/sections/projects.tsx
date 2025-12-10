@@ -34,10 +34,6 @@ export function ProjectsSection() {
             Featured Projects
           </h2>
           <div className="w-20 h-1 bg-accent mx-auto rounded-full mb-6" />
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            A showcase of projects spanning full-stack development, machine learning, 
-            and consulting work that demonstrate real-world impact and technical expertise.
-          </p>
         </motion.div>
 
         {/* Category Filter */}
@@ -90,15 +86,6 @@ export function ProjectsSection() {
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <p className="text-muted-foreground mb-4">
-            Interested in seeing more detailed case studies?
-          </p>
-          <a
-            href="#contact"
-            className="inline-flex items-center px-6 py-3 bg-transparent border border-accent text-accent rounded-full font-medium hover:bg-accent hover:text-accent-foreground transition-colors"
-          >
-            Get in Touch
-          </a>
         </motion.div>
       </div>
     </section>

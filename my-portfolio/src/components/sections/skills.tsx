@@ -19,10 +19,6 @@ export function SkillsSection() {
             Technical Skills
           </h2>
           <div className="w-20 h-1 bg-accent mx-auto rounded-full mb-6" />
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            A comprehensive toolkit spanning full-stack development, machine learning, 
-            and cloud technologies built through hands-on projects and professional experience.
-          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -46,7 +42,7 @@ export function SkillsSection() {
           <div className="bg-card border border-border rounded-xl p-6 max-w-2xl mx-auto">
             <h3 className="font-semibold text-foreground mb-3">Always Learning</h3>
             <p className="text-muted-foreground">
-              Technology evolves rapidly, and I&apos;m committed to continuous learning. 
+              I&apos;m committed to continuous learning. 
               Currently exploring advanced cloud architectures, microservices patterns, 
               and the latest developments in AI/ML.
             </p>
